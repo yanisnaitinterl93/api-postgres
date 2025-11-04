@@ -18,7 +18,7 @@ const pool = new Pool({
 });
 
 // Exemple endpoint
-app.get("/users", async (req, res) => {
+app.get("/menage", async (req, res) => {
   try {
     const result = await pool.query("SELECT * FROM menage"); // Mets ton nom de table ici
     res.json(result.rows);
